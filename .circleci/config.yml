@@ -1,0 +1,14 @@
+---
+version: 2.1
+executors:
+  docker:
+    docker:
+    - image: node:12
+
+jobs:
+  test:
+    docker: {}
+    steps:
+    - run: yarn
+    - run: yarn test
+    
