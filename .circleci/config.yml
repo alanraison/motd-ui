@@ -9,6 +9,7 @@ jobs:
   test:
     docker: {}
     steps:
+    - checkout
     - run: yarn
     - run: yarn test
     
